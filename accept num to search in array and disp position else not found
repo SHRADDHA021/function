@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int a[100],num,i,n,p;
+	int search(int a[100],int num,int n);
+	printf("enter limit=");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("enetr n numbers");
+		scanf("%d",&a[i]);
+	}
+	printf("enter num to search");
+	scanf("%d",&num);
+	p=search(a,num,n);
+	if(p==-1)
+	printf("not found");
+	else
+	printf("found=%d",p);
+}
+int search(int a[100],int num,int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==num)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
