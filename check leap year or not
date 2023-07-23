@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int i,n1,n2,y;
+	int pow(int y);
+	printf("enter  year");
+	scanf("%d",&n1);
+    pow(y);
+    return 0;
+}
+int pow(int y)
+{
+	
+	if(y%4==0)
+	
+		printf("leap");
+		else
+		printf("not leap");
+	
+}
